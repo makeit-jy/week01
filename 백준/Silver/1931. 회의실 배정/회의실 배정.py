@@ -7,7 +7,8 @@ for i in range(meeting_cnt):
     start, end = map(int, sys.stdin.readline().split(" "))
     meetings.append((start, end))
 
-meetings.sort(key=lambda x: (x[1], x[0])) # 정렬 기준을 튜플의 두 번째 요소로 설정 (종료 시간을 오름차순 정렬하고, 시작 시간을 오름차순 정렬)
+meetings.sort(key=lambda x: (x[1], x[0])) 
+# 정렬 기준을 튜플의 두번째 요소, 첫번째 요소 순서로 설정 (종료 시간을 오름차순 정렬하고, 시작 시간을 오름차순 정렬)
 
 end_time = 0
 max_meetings_cnt = 0
